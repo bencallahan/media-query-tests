@@ -1,0 +1,124 @@
+<html>
+<head>
+<!--   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  
+  <style>
+  
+    p:before {
+      content: "False";
+    }
+  
+    @media screen and (min-width: 750px) {
+      p.p0:before {
+        content: "True: screen and (min-width: 750px)";
+      }
+    }
+
+    @media not print {
+      p.p1:before {
+        content: "True: not print";
+      }
+    }
+
+    @media print {
+      p.p2:before {
+        content: "True: print";
+      }
+    }
+    
+    @media not print and (min-width: 750px) {
+      p.p3:before {
+        content: "True: not print and (min-width: 750px)";
+      }
+    }
+
+    @media (not print) and (min-width: 750px) {
+      p.p4:before {
+        content: "True: (not print) and (min-width: 750px)";
+      }
+    }
+
+    @media not (print and (min-width: 750px)) {
+      p.p5:before {
+        content: "True: not (print and (min-width: 750px))";
+      }
+    }
+    
+    @media (min-width: 750px) and not print {
+      p.p6:before {
+        content: "True: (min-width: 750px) and not print";
+      }
+    }
+
+    @media not print, (min-width: 750px) {
+      p.p7:before {
+        content: "True: not print, (min-width: 750px)";
+      }
+    }
+
+    @media screen, (min-width: 750px) {
+      p.p8:before {
+        content: "True: screen, (min-width: 750px)";
+      }
+    }
+
+    @media not print and all and (min-width: 750px) {
+      p.p9:before {
+        content: "True: not print and all and (min-width: 750px)";
+      }
+    }
+
+    @media not print and only (min-width: 750px) {
+      p.p10:before {
+        content: "True: not print and only (min-width: 750px)";
+      }
+    }
+
+    @media not print and only and (min-width: 750px) {
+      p.p11:before {
+        content: "True: not print and only and (min-width: 750px)";
+      }
+    }
+    
+    @media only not print and (min-width: 750px) {
+      p.p12:before {
+        content: "True: only not print and (min-width: 750px)";
+      }
+    }
+
+    
+    
+  
+  </style>
+</head>
+
+<body>
+  <h1>Media Query Tests</h1>
+  
+  <p class="p0"></p>
+  
+  <p class="p1"></p>
+  
+  <p class="p2"></p>
+  
+  <p class="p3"></p>
+
+  <p class="p4"></p>
+  
+  <p class="p5"></p>
+  
+  <p class="p6"></p>
+  
+  <p class="p7"></p>
+
+  <p class="p8"></p>
+  
+  <p class="p9"></p>
+
+  <p class="p10"></p>
+  
+  <p class="p11"></p>
+  
+  <p class="p12"></p>  
+</body>
+</html>
