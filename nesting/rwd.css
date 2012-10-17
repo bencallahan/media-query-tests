@@ -5,7 +5,7 @@ h1:before {
   content: "not print";
 }
 
-@media (min-width: 60em) {
+@media (min-width: 0em) {
   h1 {
     width: 50%;
   }
