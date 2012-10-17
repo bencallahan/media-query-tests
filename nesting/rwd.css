@@ -1,0 +1,15 @@
+h1 {
+  border: 5px solid black;
+}
+h1:before {
+  content: "not print";
+}
+
+@media (min-width: 60em) {
+  h1 {
+    width: 50%;
+  }
+  h1:before {
+    content: "(not print) and (min-width: 60em)"
+  }
+}

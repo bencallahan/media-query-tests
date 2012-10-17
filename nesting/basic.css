@@ -1,0 +1,19 @@
+h1 {
+  font-size: 2em;
+  border: 5px solid black;
+}
+h1:before {
+  content: "applied to all";
+}
+
+
+@media print {
+  h1 {
+    font-size: 1em;
+    border: 0;
+  }
+  
+  nav, video {
+    display: none;
+  }
+}
