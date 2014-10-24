@@ -5,84 +5,84 @@
   <style>
   
     p:before {
-      content: "False";
+      content: "False: ";
     }
   
     @media screen and (min-width: 750px) {
       p.p0:before {
-        content: "True: screen and (min-width: 750px)";
+        content: "True: ";
       }
     }
 
     @media not print {
       p.p1:before {
-        content: "True: not print";
+        content: "True: ";
       }
     }
 
     @media print {
       p.p2:before {
-        content: "True: print";
+        content: "True: ";
       }
     }
     
     @media not print and (min-width: 750px) {
       p.p3:before {
-        content: "True: not print and (min-width: 750px)";
+        content: "True: ";
       }
     }
 
     @media (not print) and (min-width: 750px) {
       p.p4:before {
-        content: "True: (not print) and (min-width: 750px)";
+        content: "True: ";
       }
     }
 
     @media not (print and (min-width: 750px)) {
       p.p5:before {
-        content: "True: not (print and (min-width: 750px))";
+        content: "True: ";
       }
     }
     
     @media (min-width: 750px) and not print {
       p.p6:before {
-        content: "True: (min-width: 750px) and not print";
+        content: "True: ";
       }
     }
 
     @media not print, (min-width: 750px) {
       p.p7:before {
-        content: "True: not print, (min-width: 750px)";
+        content: "True: ";
       }
     }
 
     @media screen, (min-width: 750px) {
       p.p8:before {
-        content: "True: screen, (min-width: 750px)";
+        content: "True: ";
       }
     }
 
     @media not print and all and (min-width: 750px) {
       p.p9:before {
-        content: "True: not print and all and (min-width: 750px)";
+        content: "True: ";
       }
     }
 
     @media not print and only (min-width: 750px) {
       p.p10:before {
-        content: "True: not print and only (min-width: 750px)";
+        content: "True: ";
       }
     }
 
     @media not print and only and (min-width: 750px) {
       p.p11:before {
-        content: "True: not print and only and (min-width: 750px)";
+        content: "True: ";
       }
     }
     
     @media only not print and (min-width: 750px) {
       p.p12:before {
-        content: "True: only not print and (min-width: 750px)";
+        content: "True: ";
       }
     }
 
@@ -95,30 +95,30 @@
 <body>
   <h1>Media Query Tests</h1>
   
-  <p class="p0"></p>
+  <p class="p0">screen and (min-width: 750px)</p>
   
-  <p class="p1"></p>
+  <p class="p1">not print</p>
   
-  <p class="p2"></p>
+  <p class="p2">print</p>
   
-  <p class="p3"></p>
+  <p class="p3">not print and (min-width: 750px)</p>
 
-  <p class="p4"></p>
+  <p class="p4">(not print) and (min-width: 750px)</p>
   
-  <p class="p5"></p>
+  <p class="p5">not (print and (min-width: 750px))</p>
   
-  <p class="p6"></p>
+  <p class="p6">(min-width: 750px) and not print</p>
   
-  <p class="p7"></p>
+  <p class="p7">not print, (min-width: 750px)</p>
 
-  <p class="p8"></p>
+  <p class="p8">screen, (min-width: 750px)</p>
   
-  <p class="p9"></p>
+  <p class="p9">not print and all and (min-width: 750px)</p>
 
-  <p class="p10"></p>
+  <p class="p10">not print and only (min-width: 750px)</p>
   
-  <p class="p11"></p>
+  <p class="p11">not print and only and (min-width: 750px)</p>
   
-  <p class="p12"></p>  
+  <p class="p12">only not print and (min-width: 750px)</p>  
 </body>
 </html>
